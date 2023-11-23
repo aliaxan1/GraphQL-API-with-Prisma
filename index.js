@@ -3,12 +3,8 @@ import bodyParser from 'body-parser';
 import cors from 'cors';
 import { ApolloServer } from '@apollo/server';
 import {expressMiddleware} from '@apollo/server/express4'
-import { PrismaClient } from '@prisma/client'
-import { EventEmitter } from 'node:events';
 import {typeDefs} from './graphql/schema.js';
 import {resolvers} from './graphql/resolvers.js';
-const prisma = new PrismaClient()
-const event = new EventEmitter();
 
 
 async function startApolloServer() {
