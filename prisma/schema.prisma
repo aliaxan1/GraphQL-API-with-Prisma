@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgresql://merchlink:merchlink@localhost:5432/postgres?schema=public"
 }
 
 
